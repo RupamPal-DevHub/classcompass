@@ -25,7 +25,7 @@ body {
 
 .main-box {
   height: 700px;
-  width: 1400px;
+  width: 80%;
   background-color: #424242;
   border: 3px solid #a57aff;
   border-radius: 30px;
@@ -38,9 +38,10 @@ body {
   height: 500px;
   width: 1300px;
   display: flex;
+  justify-content: space-between;
 }
 .logo-text {
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -69,7 +70,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   padding: 20px;
 }
 .field {
@@ -104,4 +105,46 @@ body {
   font-weight: 500;
   text-align: end;
   margin-left: 300px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    height: max-content;
+    margin: 30px 0;
+  }
+  .main-box {
+    padding: 60px;
+    width: 60%;
+    height: max-content;
+  }
+  .main-box-con {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    width: 95%;
+  }
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .field {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+  }
+  .reset-password {
+    margin-left: 70px;
+  }
 }
