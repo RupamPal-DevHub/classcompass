@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+24&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0c0c0c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* navbar */
+
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.473);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: 1px solid #a57aff;
+  backdrop-filter: blur(50px);
+}
+.navbar-side {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.473);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  position: fixed;
+  right: 0;
+  border-bottom: 1px solid #a57aff;
+  backdrop-filter: blur(50px);
+  height: 100vh;
+  display: none;
+}
+.nav-links-side {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+}
+.login-register-box-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+.login-box-side {
+  background-color: #a57aff;
+  width: 100%;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 100px;
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+.logo-link-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #a57aff;
+  font-size: 2.3rem;
+  font-family: "Jacquard 24", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 150px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  margin: 20px;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.link {
+  margin: 15px;
+}
+
+.login-register-box {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  margin-right: 150px;
+}
+
+.login-box {
+  background-color: #a57aff;
+  padding: 10px 30px 10px 30px;
+  border-radius: 100px;
+  margin-left: 20px;
+}
+.hamburger {
+  background-image: url("./menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+
+/* hero section */
+
+.hero-box {
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 50px;
+}
+.bigtext {
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+}
+.smalltext {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #bfbfbf;
+}
+.get-started {
+  background-color: #a57aff;
+  display: flex;
+  justify-content: center;
+  background-color: #a57aff;
+  padding: 15px 30px 15px 30px;
+  border-radius: 100px;
+  width: 100px;
+  margin: 30px 0px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400px;
+}
+.image-box {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image {
+  height: 500px;
+  width: 500px;
+  border-radius: 30px;
+  background-image: url("./portrait-senior-male-teacher-education-day.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 150px #a47aff7c;
+}
+
+/* how it works box */
+
+.how-works-box {
+  height: fit-content;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+}
+.header-detail {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #bfbfbf;
+}
+.step-main-box {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-wrap: wrap;
+  width: 100%;
+  height: max-content;
+}
+
+.steps {
+  height: 590px;
+  width: 370px;
+  display: inline-block;
+  background-color: #424242;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.top-bar {
+  background-color: #a57aff;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+.logo-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.step-logo {
+  width: 300px;
+
+  height: 300px;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-1 {
+  background-image: url("./location.jpg");
+}
+.logo-2 {
+  background-image: url("./search2.jpg");
+}
+.logo-3 {
+  background-image: url("./message1.jpg");
+}
+.logo-4 {
+  background-image: url("./book1.jpg");
+}
+
+.step-text {
+  color: white;
+  padding: 30px;
+  font-size: 1.2rem;
+}
+
+/* why classcompass */
+
+.why-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: max-content;
+  margin-top: 40px;
+}
+
+.why-image-box {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-image {
+  height: 450px;
+  width: 450px;
+  border-radius: 30px;
+  background-image: url("./portrait-senior-male-teacher-education-day.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  margin: 30px;
+}
+
+.why-text-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.why-text {
+  color: white;
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+
+/* testimonials */
+
+.testimonialas-box {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.small-box,
+.big-box {
+  background-color: #424242;
+  margin: 5px;
+  padding: 30px;
+  border-radius: 20px;
+  border: 3px dashed #a57aff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.testimonial-text {
+  color: white;
+}
+
+/* footer */
+
+.footer-box {
+  width: 100%;
+  height: max-content;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
+}
+
+.footer-content {
+  width: 80%;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  color: #a57aff;
+  font-size: 2.9rem;
+  font-family: "Jacquard 24", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 100px;
+}
+
+.footer-form-email {
+  width: 400px;
+  border-radius: 15px 0px 0px 15px;
+  border: none;
+  padding: 20px;
+  background-color: #424242;
+  font-size: 1.2rem;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  font-weight: 700;
+}
+.form-button {
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+  padding: 20px;
+  font-size: 1.2rem;
+  background-color: #a57aff;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.footer-header {
+  color: #5f5f5f;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.link-container {
+  display: flex;
+  gap: 40px;
+}
+.footer-links {
+  color: white;
+  font-weight: 600;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.footer-details {
+  width: 100%;
+  background-color: #a57aff;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .hamburger {
+    background-image: url("./menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+  }
+  .logo-link-box {
+    margin: 15px 10px;
+  }
+  .logo {
+    margin-left: 40px;
+  }
+
+  .login-register-box {
+    margin-right: 40px;
+  }
+
+  .nav-links,
+  .register-text,
+  .login-box {
+    display: none;
+  }
+
+  .why-box {
+    flex-direction: column;
+  }
+  .why-text {
+    font-size: 1.3rem;
+  }
+  .hero-box {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 140px;
+  }
+  .text-box {
+    order: 2;
+    text-align: start;
+  }
+  .image-box {
+    order: 1;
+  }
+  .bigtext {
+    font-size: 2rem;
+  }
+  .why-image {
+    display: none;
+  }
+  .footer-form-email {
+    width: 40vw;
+  }
+}
+@media (max-width: 700px) {
+  .testimonialas-box {
+    flex-direction: column;
+    width: 70vw;
+  }
+}
