@@ -509,5 +509,6 @@ body {
     border-bottom: 1px solid #a57aff;
     backdrop-filter: blur(50px);
     height: 100vh;
+    display: none;
   }
 }
