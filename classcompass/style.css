@@ -446,6 +446,9 @@ body {
   .login-box {
     display: none;
   }
+  .header {
+    font-size: 2.5rem;
+  }
 
   .why-box {
     flex-direction: column;
