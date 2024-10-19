@@ -155,6 +155,7 @@ body {
 }
 .get-started {
   background-color: #a57aff;
+  width: 200px;
   display: flex;
   justify-content: center;
   background-color: #a57aff;
